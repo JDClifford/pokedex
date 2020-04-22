@@ -2,4 +2,11 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border: 2px #4d4d4d solid;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, .56);
+    border-radius: 40px;
+}
+
+.Pokedex {
+    text-align: left;
 }
