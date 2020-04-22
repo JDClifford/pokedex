@@ -3,13 +3,19 @@ import './Pokecard.css'
 
 class Pokecard extends React.Component {
     render() {
+        //Formats id value to be compatable with pokemon image api
+        let id = (this.props.id).toString();
+        if(id.length === 2) {
+            id = ("0" + id);
+        } else if(id.length === 1) {
+            id = ("00" + id);
+        }
         return (
             <div className="Pokecard">
-                <h1>{this.props.name}</h1>
-                <div>id: {this.props.id}</div>
-                <div>Type: {this.props.type}</div>
-                <div>EXP: {this.props.exp}</div>
-                <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + this.props.id + ".png"}/>
+                <h1 className='Pokecard-name'>{this.props.name}</h1>
+                <div className='Pokecard-data'>Type: {this.props.type}</div>
+                <div className='Pokecard-data'>EXP: {this.props.exp}</div>
+                <img src={"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/" + id + ".png"}/>
             </div>
         )
     }

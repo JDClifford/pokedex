@@ -1,5 +1,5 @@
 import React from 'react';
-import Pokedex from './pokedex';
+import Pokedex from './Pokedex';
 
 class App extends React.Component {
   render() {
