@@ -1,4 +1,11 @@
-.Pokegame > h1 {
+.Pokegame-winner {
+    margin-bottom: -30px;
+    margin-top: 0px;
+}
+
+.Pokegame-title {
+    text-align: left;
     font-family: 'Bangers', cursive;
-    font-size: 4em;
+    font-size: 1.5em;
+    margin: 0px;
 }

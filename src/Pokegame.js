@@ -33,9 +33,10 @@ class Pokegame extends React.Component {
 
         return (
             <div className='Pokegame'>
-                <h1>POKEDEX DUEL</h1>
-                {hand1Exp > hand2Exp ? <h3>Player 1 wins</h3> : <h3>Player 2 wins</h3>}
-                <Pokedex hand1={hand1} hand2={hand2}/>
+                <h6 className='Pokegame-title'>POKEDEX DUEL</h6>
+                <Pokedex hand={hand1} player={1} isWinner={hand1Exp > hand2Exp} exp={hand1Exp}/>
+                <Pokedex hand={hand2} player={2} isWinner={hand2Exp > hand1Exp} exp={hand2Exp}/>
+
             </div>
         )
     }
